@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://www.miaopashi.xyz</id>
     <title>Meopas</title>
-    <updated>2019-06-23T05:31:56.229Z</updated>
+    <updated>2019-06-23T05:34:12.336Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://www.miaopashi.xyz"/>
     <link rel="self" href="https://www.miaopashi.xyz/atom.xml"/>
@@ -42,11 +42,11 @@ sudo cnpm install -g vue-cli
 <pre><code>cd 目录路径
 </code></pre>
 <p><strong>第八步：创建一个vue.js工程</strong></p>
-<pre><code>vue init webpack(使用哪个模板) 工程名字&lt;*工程名字不能用中文&gt;
+<pre><code>vue init webpack(需要使用的模板) 工程名字    //工程名不能用中文
 </code></pre>
 <p><strong>第九步：安装项目依赖</strong></p>
 <p>一定要从官方仓库安装，npm 服务器在国外所以这一步安装速度会很慢。</p>
-<pre><code>npm install   //*慎用,会非常慢
+<pre><code>npm install           //npm慎用,会非常慢
 cnpm install　  
 </code></pre>
 <p><strong>第十步：安装 vue 路由模块vue-router和网络请求模块vue-resource</strong></p>
