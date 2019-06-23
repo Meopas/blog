@@ -4,7 +4,7 @@
 <meta name="description" content="" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>mac如何运行vue项目 | Meopas</title>
-<link rel="shortcut icon" href="https://www.miaopashi.xyz/favicon.ico?v=1561263293908">
+<link rel="shortcut icon" href="https://www.miaopashi.xyz/favicon.ico?v=1561266831851">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 <link rel="stylesheet" href="https://www.miaopashi.xyz/styles/main.css">
 
@@ -18,7 +18,7 @@
       <div class="main-content">
         <div class="site-header">
   <a href="https://www.miaopashi.xyz">
-  <img class="avatar" src="https://www.miaopashi.xyz/images/avatar.png?v=1561263293908" alt="">
+  <img class="avatar" src="https://www.miaopashi.xyz/images/avatar.png?v=1561266831851" alt="">
   </a>
   <h1 class="site-title">
     Meopas
@@ -91,41 +91,46 @@
                 · 2019-06-23 ·
               </time>
               
+                <a href="https://www.miaopashi.xyz/tag/gridea" class="post-tags">
+                  # Gridea
+                </a>
+              
             </div>
+            
+              <div class="post-feature-image" style="background-image: url('https://www.miaopashi.xyz/post-images/mac-ru-he-yun-xing-vue-xiang-mu.png')">
+              </div>
             
             <div class="post-content">
               <p><strong>第一步： Mac OS系统安装 brew</strong></p>
-<p><code>打开终端运行以下命令:</code>
+<p>打开终端运行以下命令:
 <code>/usr/bin/ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;</code></p>
 <p><strong>第二步： 安装 node.js</strong></p>
 <p>为了避免使用brew命令经常出错的情况，所以采用手动安装</p>
+<blockquote>
 <p>下载地址：https://nodejs.org/en/download/     （选择mac os）</p>
+</blockquote>
 <p><strong>第三步： 获取nodejs模块安装目录访问权限  （必须步骤）</strong></p>
-<pre><code>sudo chmod -R 777 /usr/local/lib/node_modules/
-</code></pre>
+<p><code>sudo chmod -R 777 /usr/local/lib/node_modules/</code></p>
 <p><strong>第四步： 安装 淘宝镜像 （cnpm）</strong></p>
-<pre><code>npm install -g cnpm --registry=https://registry.npm.taobao.org
-</code></pre>
+<p><code>npm install -g cnpm --registry=https://registry.npm.taobao.org</code></p>
 <p><strong>第五步：安装webpack</strong></p>
 <p><code>cnpm install webpack -g</code></p>
 <p><strong>第六步：安装vue脚手架</strong></p>
-<blockquote>
-<p>npm install vue-cli -g   (npm下载速度超级慢，目前cnpm已经成功替代npm)
-<code>sudo cnpm install -g vue-cli</code></p>
-</blockquote>
+<p>~npm install vue-cli -g~  (npm下载速度超级慢，目前cnpm已经成功替代npm)</p>
+<p><code>sudo cnpm install -g vue-cli</code></p>
 <p><strong>第七步：在硬盘上找一个文件夹放工程用的，在终端中进入该目录</strong></p>
 <pre><code>cd 目录路径
 </code></pre>
 <p><strong>第八步：创建一个vue.js工程</strong></p>
-<p>vue init webpack(使用哪个模板？不懂可以百度一下) 工程名字&lt;工程名字不能用中文&gt;</p>
+<p><code>vue init webpack(使用哪个模板？不懂可以百度一下) 工程名字&lt;工程名字不能用中文&gt;</code></p>
 <p><strong>第九步：安装项目依赖</strong>
 一定要从官方仓库安装，npm 服务器在国外所以这一步安装速度会很慢。</p>
-<p>npm install　   （慎用,会非常慢）
-　　　　cnpm install</p>
+<p><code>npm install</code>　   （慎用,会非常慢）</p>
+<p><code>cnpm install</code></p>
 <p><strong>第十步：安装 vue 路由模块vue-router和网络请求模块vue-resource</strong></p>
 <p><code>cnpm install vue-router vue-resource --save</code></p>
 <p><strong>启动项目</strong></p>
-<pre><code>npm run dev</code></pre>
+<p><code>npm run dev</code></p>
 
             </div>
           </article>
