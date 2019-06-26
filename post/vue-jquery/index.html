@@ -9,7 +9,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://www.miaopashi.xyz/favicon.ico?v=1561560258732">
+<link rel="shortcut icon" href="https://www.miaopashi.xyz/favicon.ico?v=1561560369233">
 <link rel="stylesheet" href="https://www.miaopashi.xyz/styles/main.css">
 
 
@@ -29,7 +29,7 @@
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="https://www.miaopashi.xyz">
-        <img src="https://www.miaopashi.xyz/images/avatar.png?v=1561560258732" class="site-logo">
+        <img src="https://www.miaopashi.xyz/images/avatar.png?v=1561560369233" class="site-logo">
         <h1 class="site-title">Meopas</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -104,8 +104,8 @@
 <p>第二步：在需要引入jquery的组件的vue文件中使用</p>
 <pre><code>import $ from 'jquery' 
 </code></pre>
-<p>2、全局引入(<em>建议选择全局引入，避免导入麻烦</em>)
-第一步：还是通过终端命令下载jquery</p>
+<p>2、全局引入(<em>建议选择全局引入，避免导入麻烦</em>)</p>
+<p>第一步：还是通过终端命令下载jquery</p>
 <pre><code>cd 项目地址 npm install jquery --save-dev
 </code></pre>
 <blockquote>
@@ -126,9 +126,12 @@
 <p>第四步：重启服务</p>
 <pre><code>npm run dev
 </code></pre>
-<p>第五部：测试在vue文件中的 Script 标签中使用
-<code>$(function () { alert(233); });</code>
-出现弹窗，导入成功！</p>
+<p>第五部：测试在vue文件中的 Script 标签中使用</p>
+<pre><code>	$(function () {
+    alert(233);
+    });
+</code></pre>
+<p>出现弹窗，导入成功！</p>
 
             </div>
             
