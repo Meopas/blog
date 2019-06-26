@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>文章归档 | Meopas</title>
+<title>vue引入jquery的方法 | Meopas</title>
 <meta name="description" content="一只小白的进阶">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -90,59 +90,70 @@
 
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
-          
+          <div class="post-detail">
+            <h2 class="post-title">vue引入jquery的方法</h2>
+            <div class="post-date">2019-06-26</div>
+            
+            <div class="post-content">
+              <p>最近在学习vue框架，在其中遇到不少坑，写一篇教程来总结下。避免下次再入同样的坑，再去到处查找相关教程。<!--more-->
+总的来说vue框架引入jquery有两种方法，分别是局部式和全局式，以下是具体内容：</p>
+<p>1、局部引入
+第一步：通过终端命令下载jquery</p>
+<pre><code>npm install jquery --save-dev
+</code></pre>
+<p>第二步：在需要引入jquery的组件的vue文件中使用</p>
+<pre><code>import $ from 'jquery' 
+</code></pre>
+<p>2、全局引入(<em>建议选择全局引入，避免导入麻烦</em>)
+第一步：还是通过终端命令下载jquery</p>
+<pre><code>cd 项目地址 npm install jquery --save-dev
+</code></pre>
+<blockquote>
+<p>如果在这一步npm没有下载成功，请删除项目文件夹中的node_modules文件夹，并使用cnpm淘宝映像重新安装，具体教程见上一篇教程 vue-lie的安装。</p>
+</blockquote>
+<p>第二步：在项目目录下build下的***webpack.base.conf.js***文件头部加入</p>
+<pre><code>const webpack = require('webpack')
+</code></pre>
+<p>第三步：找到js文件中的<strong>module.exports</strong>并在其尾部加入</p>
+<pre><code>plugins: [
+    new webpack.optimize.CommonsChunkPlugin('common.js'),
+    new webpack.ProvidePlugin({
+      jQuery: &quot;jquery&quot;,
+      $: &quot;jquery&quot;
+    })
+  ]
+</code></pre>
+<p>第四步：重启服务</p>
+<pre><code>npm run dev
+</code></pre>
+<p>第五部：测试在vue文件中的<script>标签中使用
+<code>$(function () { alert(233); });</code>
+出现弹窗，导入成功！</p>
 
-          <h2 class="archives-title">文章归档</h2>
-          <div class="archives-container">
+            </div>
             
-              <h2 class="year" data-aos="fade-in" data-aos-delay="500">2019</h2>
-              
+              <div class="tag-container">
                 
-                  <article class="post">
-                    <a href="https://www.miaopashi.xyz/post/vue-jquery">
-                      <h2 class="post-title">
-                        vue引入jquery的方法
-                      </h2>
-                    </a>
-                  </article>
+                  <a href="https://www.miaopashi.xyz/tag/Rur9X3idW" class="tag">
+                    教程
+                  </a>
                 
-              
-                
-                  <article class="post">
-                    <a href="https://www.miaopashi.xyz/post/macVuestart">
-                      <h2 class="post-title">
-                        mac如何运行vue项目
-                      </h2>
-                    </a>
-                  </article>
-                
-              
-                
-              
+              </div>
             
-              <h2 class="year" data-aos="fade-in" data-aos-delay="500">2018</h2>
-              
-                
-              
-                
-              
-                
-                  <article class="post">
-                    <a href="https://www.miaopashi.xyz/post/hello-gridea">
-                      <h2 class="post-title">
-                        Hello Gridea
-                      </h2>
-                    </a>
-                  </article>
-                
-              
             
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://www.miaopashi.xyz/post/macVuestart">
+                  <h3 class="post-title">
+                    mac如何运行vue项目
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
           </div>
-
-          <div class="pagination-container">
-  
-  
-</div>
 
         </div>
       </div>
