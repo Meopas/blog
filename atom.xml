@@ -2,14 +2,14 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://www.miaopashi.xyz</id>
     <title>Meopas</title>
-    <updated>2019-06-26T14:54:30.723Z</updated>
+    <updated>2020-04-25T07:52:33.098Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://www.miaopashi.xyz"/>
     <link rel="self" href="https://www.miaopashi.xyz/atom.xml"/>
     <subtitle>一只小白的进阶</subtitle>
     <logo>https://www.miaopashi.xyz/images/avatar.png</logo>
     <icon>https://www.miaopashi.xyz/favicon.ico</icon>
-    <rights>All rights reserved 2019, Meopas</rights>
+    <rights>All rights reserved 2020, Meopas</rights>
     <entry>
         <title type="html"><![CDATA[vue引入jquery的方法]]></title>
         <id>https://www.miaopashi.xyz/post/vue-jquery</id>
@@ -21,7 +21,7 @@
         <content type="html"><![CDATA[<p>最近在学习vue框架，在其中遇到不少坑，写几篇教程来总结下。避免下次入同样的坑，再四处去查找相关教程。</p>
 <!-- more -->
 <p>总的来说vue框架引入jquery有两种方法，分别是局部式和全局式，以下是具体内容：</p>
-<p>1、局部引入
+<p>1、局部引入<br>
 第一步：通过终端命令下载jquery</p>
 <pre><code>npm install jquery --save-dev
 </code></pre>
